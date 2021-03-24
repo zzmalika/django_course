@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #2C2C2C;
+    padding: 0.5vh 2vh;
+}
+
+.container {
+
+}
+
+.header h2 {
+    color: white;
+
+}
+
+p {
+    color: blue;
+}
+
+.main_container {
+    margin-top: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.todo_button {
+    background-color: blue;
+    color: white;
+    margin-bottom: 16px;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.todos_title {
+    margin-bottom: 24px;
+}
+
+
+
+.buttons_container {
+    display: flex;
+}
+
+.buttons_container .button_completed {
+    background-color: orange;
+    padding: 4px 12px;
+    border-radius: 4px;
+    color: black;
+    margin-right: 16px;
+}
+
+.buttons_container .button_delete {
+    background-color: red;
+    padding: 4px 12px;
+    border-radius: 4px;
+    color: white;
+}
+
+.button_done{
+    color: white;
+    background-color: cadetblue;
+    margin-bottom: 8px;
+    padding: 4px 8px;
+    border-radius: 4px;
+}

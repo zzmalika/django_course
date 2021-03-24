@@ -1,0 +1,48 @@
+{% load static %}
+{% load bootstrap4 %}
+{% bootstrap_css %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/list.css' %}">
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h2>TODO APP</h2>
+    </div>
+
+    <div class="main_container">
+        <h6 class="todo_button">
+            Add Task
+        </h6>
+        <h1 class="todos_title">Task in "List 1"</h1>
+
+        <table class="table table_bordered">
+            <td><h6>Task</h6></td>
+            <td><h6>Created</h6></td>
+            <td><h6>Due on</h6></td>
+            <td><h6>Owner</h6></td>
+            <td><h6>Mark</h6></td>
+            {% for todo in todos %}
+                <tr>
+                    <td>{{ todo.num_task }}</td>
+                    <td>{{ todo.created_date }}</td>
+                    <td>{{ todo.deadline }}</td>
+                    <td>{{ todo.owner }}</td>
+                    <td class="button_done">Done</td>
+                </tr>
+            {% endfor %}
+        </table>
+
+        <div class="buttons_container">
+            <div class="button_completed">View completed tasks</div>
+            <div class="button_delete">Delete this list</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
